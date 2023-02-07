@@ -1,0 +1,880 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#"
+     xml:base="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#belongsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#canAccess -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#canAccess">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#canAccessCardio -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#canAccessCardio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Cardiologist"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Specialist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Cardio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#canAccessGynaec -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#canAccessGynaec">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Gynaecologist"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Specialist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Gynaec"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#canAccessNeuro -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#canAccessNeuro">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Neurologist"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Specialist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Neuro"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#canAccessPediatric -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#canAccessPediatric">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Pediatrician"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Specialist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Pediatric"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#canAccessPulmono -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#canAccessPulmono">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Pulmonologist"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Specialist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Pulmono"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#canAccessSpecialist -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#canAccessSpecialist">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Specialist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#hasData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#hasData">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#hasEmployee -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#hasEmployee">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#isAccessedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#isAccessedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#isAdmittedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#isAdmittedTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#isEmployeedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#isEmployeedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#isStoredAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#isStoredAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DataCardio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DataCardio">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Cardio"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DataDonor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DataDonor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DataGynaec -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DataGynaec">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Gynaec"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DataNeuro -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DataNeuro">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Neuro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DataPediatric -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DataPediatric">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Pediatric"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DataPersonal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DataPersonal">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Personal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DataPulmono -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DataPulmono">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Pulmono"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital"/>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital_Id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital_Id">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer_Id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer_Id">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Patient -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Patient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Patient_Id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Patient_Id">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Patient"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Patient"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Specialist -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Specialist"/>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Specialist_Id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Specialist_Id">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Specialist"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Specialist"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Admin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Admin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Cardio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Cardio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Cardiologist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Cardiologist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Elite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Elite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Patient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Gynaec -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Gynaec">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Gynaecologist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Gynaecologist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital"/>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Neuro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Neuro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Neurologist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Neurologist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Nurse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Nurse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Patient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Pediatric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Pediatric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Pediatrician -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Pediatrician">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Personal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Personal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Pulmono -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Pulmono">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Pulmonologist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Pulmonologist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Regular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Regular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Patient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Specialist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Specialist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Deku -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Deku">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Patient"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DekusCardioData"/>
+        <isAdmittedTo rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital_Fortis"/>
+        <Patient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CardioPatient1</Patient>
+        <Patient_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CardioPatient1</Patient_Id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DekusCardioData -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DekusCardioData">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Cardio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Deku"/>
+        <isStoredAt rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital_Fortis"/>
+        <Data rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CardioData1</Data>
+        <DataCardio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CardioData1</DataCardio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Dr._Bulma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Dr._Bulma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Neurologist"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Pulmonologist"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Specialist"/>
+        <canAccessNeuro rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#RukiasNeuroData"/>
+        <canAccessPulmono rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#RobinsPulmonoData"/>
+        <isEmployeedBy rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital_Fortis"/>
+        <Specialist rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neuro1</Specialist>
+        <Specialist rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pulmono1</Specialist>
+        <Specialist_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neuro1</Specialist_Id>
+        <Specialist_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pulmono1</Specialist_Id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Dr._Lodaya -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Dr._Lodaya">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Gynaecologist"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Specialist"/>
+        <canAccess rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#UmangsPersonalData"/>
+        <canAccessGynaec rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#HinasGynaecData"/>
+        <isEmployeedBy rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital_Fortis"/>
+        <Specialist rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gynaec1</Specialist>
+        <Specialist rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Personal1</Specialist>
+        <Specialist_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gynaec1</Specialist_Id>
+        <Specialist_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Personal1</Specialist_Id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Dr._Senju -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Dr._Senju">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Cardiologist"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Inquirer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Pediatrician"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Specialist"/>
+        <canAccessCardio rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DekusCardioData"/>
+        <canAccessPediatric rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#RangikusPediatricData"/>
+        <isEmployeedBy rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital_Fortis"/>
+        <Specialist rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardio1</Specialist>
+        <Specialist rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pediatric1</Specialist>
+        <Specialist_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardio1</Specialist_Id>
+        <Specialist_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pediatric1</Specialist_Id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Patient"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#HinasGynaecData"/>
+        <isAdmittedTo rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital_Fortis"/>
+        <Patient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GynaecPatient1</Patient>
+        <Patient_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GynaecPatient1</Patient_Id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#HinasGynaecData -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#HinasGynaecData">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Gynaec"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hina"/>
+        <isStoredAt rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital_Fortis"/>
+        <Data rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GynaecData1</Data>
+        <DataGynaec rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GynaecData1</DataGynaec>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital_Fortis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital_Fortis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital"/>
+        <hasData rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DekusCardioData"/>
+        <hasData rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#HinasGynaecData"/>
+        <hasData rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#RangikusPediatricData"/>
+        <hasData rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#UmangsPersonalData"/>
+        <hasEmployee rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Dr._Lodaya"/>
+        <hasEmployee rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Dr._Senju"/>
+        <Hospital rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hospital2</Hospital>
+        <Hospital_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hospital2</Hospital_Id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital_Nanavati -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital_Nanavati">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital"/>
+        <hasData rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#RobinsPulmonoData"/>
+        <hasData rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#RukiasNeuroData"/>
+        <hasEmployee rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Dr._Bulma"/>
+        <Hospital rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hospital1</Hospital>
+        <Hospital_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hospital1</Hospital_Id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Rangiku -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Rangiku">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Patient"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#RangikusPediatricData"/>
+        <isAdmittedTo rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital_Fortis"/>
+        <Patient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PediatricPatient1</Patient>
+        <Patient_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PediatricPatient1</Patient_Id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#RangikusPediatricData -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#RangikusPediatricData">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Pediatric"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Rangiku"/>
+        <isStoredAt rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital_Fortis"/>
+        <Data rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PediatricData1</Data>
+        <DataPediatric rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PediatricData1</DataPediatric>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Robin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Robin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Patient"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#RobinsPulmonoData"/>
+        <isAdmittedTo rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital_Nanavati"/>
+        <Patient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PulmonoPatient1</Patient>
+        <Patient_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PulmonoPatient1</Patient_Id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#RobinsPulmonoData -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#RobinsPulmonoData">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Pulmono"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Robin"/>
+        <isStoredAt rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital_Nanavati"/>
+        <Data rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PulmonoData1</Data>
+        <DataPulmono rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PulmonoData1</DataPulmono>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Rukia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Rukia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Patient"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#RukiasNeuroData"/>
+        <isAdmittedTo rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital_Nanavati"/>
+        <Patient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeuroPatient1</Patient>
+        <Patient_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeuroPatient1</Patient_Id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#RukiasNeuroData -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#RukiasNeuroData">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Neuro"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Rukia"/>
+        <isStoredAt rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital_Nanavati"/>
+        <Data rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeuroData1</Data>
+        <DataNeuro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeuroData1</DataNeuro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Umang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Umang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Patient"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#UmangsPersonalData"/>
+        <isAdmittedTo rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital_Fortis"/>
+        <Patient rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PersonalPatient1</Patient>
+        <Patient_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PersonalPatient1</Patient_Id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#UmangsPersonalData -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#UmangsPersonalData">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Data"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Personal"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Umang"/>
+        <isStoredAt rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital_Fortis"/>
+        <Data rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PersonalData1</Data>
+        <DataPersonal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PersonalData1</DataPersonal>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DataCardio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DataDonor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DataGynaec"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DataNeuro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DataPediatric"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DataPersonal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#DataPulmono"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#H">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">General</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Specialist"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Regular"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#belongsTo"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#a"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#isEmployeedBy"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#x"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#H"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#Hospital"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#H"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#isAccessedBy"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#a"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/umang/ontologies/2022/11/AI_PRACT9_K1_60009200032#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
